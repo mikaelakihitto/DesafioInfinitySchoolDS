@@ -57,7 +57,7 @@ with open('tabela_vendas_ficticia.csv', 'w', newline='') as arquivo:
     escritor_csv.writerow(['Produto', 'Preco', 'Data', 'Categoria'])
 
     # Gera 100 linhas de dados fictícios
-    for _ in range(100):
+    for _ in range(1000):
         produto = fake.word()
         preco = round(random.uniform(10.0, 200.0), 2)
         data_venda = fake.date_time_this_decade()
